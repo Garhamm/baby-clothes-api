@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', apiRequest)
 async function apiRequest(){
     const rapperName = document.querySelector('input').value
     try{
-        const response = await fetch(`https://baby-clothes-api.herokuapp.com/Rapper Name${rapperName}`)
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=38.98&lon=-94.67&appid=4002060b1a81792c61fbc96fe60db2d0`)
         const data = await response.json()
 
         console.log(data)

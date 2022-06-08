@@ -1,0 +1,1 @@
+// main js file that will run when index.ejs is called. 

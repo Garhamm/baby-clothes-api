@@ -5,6 +5,13 @@ const PORT = 8000
 
 app.use(cors())
 
+// Declares the use of EJS, public folders, etc. 
+app.set('view engine', 'ejs')
+app.use(express.static('public'))
+app.use(express.urlencoded({extended: true }))
+app.use(express.json())
+
+
 // Serves the index.html to the client
 app.get('/',(request, response) => {
     response.sendFile(__dirname + '/index.html')

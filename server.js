@@ -16,6 +16,7 @@ app.use(express.json())
 app.get('/',(request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
+
 // Fetches the weather API information
 app.get('/',(request,response) =>{
     const rapperName = request.params.name.toLocaleLowerCase()
